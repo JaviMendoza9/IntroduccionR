@@ -70,3 +70,31 @@ terremotos_DatosEstadistica_2020<-data.frame(
 #Impresion del resultado
 terremotos_DatosEstadistica_2020
 ```
+
+### Ejercicio 4
+Cargue el dataset "DNase" e identifique su estructura. Extraiga (subset) los datos que cumplan con las condiciones de: 
+  
+  1. "conc" (concentracion) entre 0.1 y 0.2
+  2. "Run" diferente a 2, "conc" mayor a 0.2 y "density" menor o igual a 1.0
+
+```{r dataDNase}
+# Selección del dataset "DNase"
+?DNase
+
+# 1. "conc" (concentracion) entre 0.1 y 0.2
+#Para esto se utliza subset y se obtienen datos en especifico
+#Para los datos en especifico de este ejercicio se toma en cuenta lo siguiente:
+#(concentracion) entre 0.1 y 0.2 hace referencia a valores reales que estan en el intervalo de 0.1 a 0.2, por ejemplo 0.13, pero no de los que salen de este intervalo, por ejemplo 0.0999999 o 0.2000000001 
+literal41Conc <- subset(DNase, conc >= 0.1 & conc <=0.2)
+#Se imprime el resultado
+literal41Conc
+
+#2. "Run" diferente a 2, "conc" mayor a 0.2 y "density" menor o igual a 1.0
+#Para esto se utliza subset y se obtienen datos en especifico
+#Para los datos en especifico de este ejercicio se toma en cuenta lo siguiente:
+#"Run" diferente a 2, es decir datos que no son 2 o "!=", por ejemplo 12
+#"conc" mayor a 0.2, es decir valores reales del intervalo > a 0.2, por ejemplo 0.23, pero no de los que son menores o el mismo numero, por ejemplo 0.1999999 o 0.2
+#density" menor o igual a 1.0, es decir valores reales del intervalo <= a 1.0, por ejemplo 0.23, pero no de los que son mayores, por ejemplo 1.000000001
+literal42RunConcyDensity <- subset(DNase, Run != 2 &  conc > 0.2 & density <= 1.0)
+#Se imprime el resultado
+literal42RunConcyDensity
