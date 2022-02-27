@@ -36,3 +36,17 @@ ciudad<-"Tena"
 #Se imprime el valor del identificador
 ciudad
 ```
+
+### Ejercicio 2
+Crear un identificador de nombre "pais_andes" y asigne como valor los nombres de los países por donde cruza la cordillera de Los Andes.
+
+```{r pais_andes}
+#Se asigna un valor al idetificador de pais_andes
+#En este caso se lo asigna los nombres de los países por los que pasa la Coordillera de los Andes
+#Se toma en cuenta Venezuela porque pasa parte de la Cooridellera de los Andes
+#Al ser cadenas de caracteres se debe emepzar la variable como tipo .character
+pais_andes<-as.character(c("Argentina", "Bolivia", "Chile", "Colombia", "Ecuador", "Perú", "Venezuela"))
+#Se imprimen los datos
+str(pais_andes)
+print(pais_andes)
+```
