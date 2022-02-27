@@ -25,3 +25,14 @@ knitr::opts_chunk$set(echo = TRUE)
 ## TAREA 1: TIPOS DE DATOS
 
 Se soluciona la TAREA 1: TIPOS DE DATOS, basado en los archivos proporcionados en clase.
+
+### Ejericicio 1
+Crear un identificador de nombre "ciudad" y asigne como valor el nombre de alguna ciudad.
+
+```{r ciudad}
+#Se asigna un valor al idetificador de ciudad
+#En este caso se lo asigna con el nombre Tena
+ciudad<-"Tena"
+#Se imprime el valor del identificador
+ciudad
+```
