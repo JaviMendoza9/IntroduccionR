@@ -50,3 +50,17 @@ pais_andes<-as.character(c("Argentina", "Bolivia", "Chile", "Colombia", "Ecuador
 str(pais_andes)
 print(pais_andes)
 ```
+
+### Ejercicio 3
+Crear un dataframe con 12 eventos (files) y 5 variables (columnas), cada columna debe tener diferentes tipos de datos (entero, decimal, caracter, logico)
+
+```{r terremotos_DatosEstadistica_2020}
+terremotos_DatosEstadistica_2020<-data.frame(
+  "Magnitud" = c(2.4, 3.9, 3.5, 3.9, 4.3, 4.1, 4.4, 3.5, 3.2, 3.9, 3.8, 2.4),
+  "Latitud" = as.character(c("0.85 N", "0.67 N", "1.24 S", "3.44 S", "3.6 S", "0.36 N", "0.75 S", "0.72 S", "0.22 N", "0.67 S", "3.32 S", "1.38 S")),
+  "Longitud" = as.character(c("79.80 W", "80.50 W", "80.65 W", "80.84 W", "80.89 W", "80.22 W", "81.17  W", "81 W", "80.06W", "81.11W", "81.06W", "78.45W")),
+  "Provincia" = as.character(c("Esmeraldas", "Esmeraldas", "Esmeraldas", "Manabí", "EL Oro", "Esmeraldas", "Manabí", "Manabí", "Manabí", "Manabí", "EL Oro", "Tungurahua")),
+  "Temperatura" = c(28, 30, 29, 29, 30, 27, 25, 24, 26, 27, 28, 10))
+  
+terremotos_DatosEstadistica_2020
+```

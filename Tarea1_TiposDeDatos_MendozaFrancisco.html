@@ -1628,6 +1628,33 @@ nombres de los países por donde cruza la cordillera de Los Andes.</p>
 <pre><code>## [1] &quot;Argentina&quot; &quot;Bolivia&quot;   &quot;Chile&quot;     &quot;Colombia&quot;  &quot;Ecuador&quot;   &quot;Perú&quot;     
 ## [7] &quot;Venezuela&quot;</code></pre>
 </div>
+<div id="ejercicio-3" class="section level3">
+<h3>Ejercicio 3</h3>
+<p>Crear un dataframe con 12 eventos (files) y 5 variables (columnas),
+cada columna debe tener diferentes tipos de datos (entero, decimal,
+caracter, logico)</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>terremotos_DatosEstadistica_2020<span class="ot">&lt;-</span><span class="fu">data.frame</span>(</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Magnitud&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="fl">2.4</span>, <span class="fl">3.9</span>, <span class="fl">3.5</span>, <span class="fl">3.9</span>, <span class="fl">4.3</span>, <span class="fl">4.1</span>, <span class="fl">4.4</span>, <span class="fl">3.5</span>, <span class="fl">3.2</span>, <span class="fl">3.9</span>, <span class="fl">3.8</span>, <span class="fl">2.4</span>),</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Latitud&quot;</span> <span class="ot">=</span> <span class="fu">as.character</span>(<span class="fu">c</span>(<span class="st">&quot;0.85 N&quot;</span>, <span class="st">&quot;0.67 N&quot;</span>, <span class="st">&quot;1.24 S&quot;</span>, <span class="st">&quot;3.44 S&quot;</span>, <span class="st">&quot;3.6 S&quot;</span>, <span class="st">&quot;0.36 N&quot;</span>, <span class="st">&quot;0.75 S&quot;</span>, <span class="st">&quot;0.72 S&quot;</span>, <span class="st">&quot;0.22 N&quot;</span>, <span class="st">&quot;0.67 S&quot;</span>, <span class="st">&quot;3.32 S&quot;</span>, <span class="st">&quot;1.38 S&quot;</span>)),</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Longitud&quot;</span> <span class="ot">=</span> <span class="fu">as.character</span>(<span class="fu">c</span>(<span class="st">&quot;79.80 W&quot;</span>, <span class="st">&quot;80.50 W&quot;</span>, <span class="st">&quot;80.65 W&quot;</span>, <span class="st">&quot;80.84 W&quot;</span>, <span class="st">&quot;80.89 W&quot;</span>, <span class="st">&quot;80.22 W&quot;</span>, <span class="st">&quot;81.17  W&quot;</span>, <span class="st">&quot;81 W&quot;</span>, <span class="st">&quot;80.06W&quot;</span>, <span class="st">&quot;81.11W&quot;</span>, <span class="st">&quot;81.06W&quot;</span>, <span class="st">&quot;78.45W&quot;</span>)),</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Provincia&quot;</span> <span class="ot">=</span> <span class="fu">as.character</span>(<span class="fu">c</span>(<span class="st">&quot;Esmeraldas&quot;</span>, <span class="st">&quot;Esmeraldas&quot;</span>, <span class="st">&quot;Esmeraldas&quot;</span>, <span class="st">&quot;Manabí&quot;</span>, <span class="st">&quot;EL Oro&quot;</span>, <span class="st">&quot;Esmeraldas&quot;</span>, <span class="st">&quot;Manabí&quot;</span>, <span class="st">&quot;Manabí&quot;</span>, <span class="st">&quot;Manabí&quot;</span>, <span class="st">&quot;Manabí&quot;</span>, <span class="st">&quot;EL Oro&quot;</span>, <span class="st">&quot;Tungurahua&quot;</span>)),</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Temperatura&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">28</span>, <span class="dv">30</span>, <span class="dv">29</span>, <span class="dv">29</span>, <span class="dv">30</span>, <span class="dv">27</span>, <span class="dv">25</span>, <span class="dv">24</span>, <span class="dv">26</span>, <span class="dv">27</span>, <span class="dv">28</span>, <span class="dv">10</span>))</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>terremotos_DatosEstadistica_2020</span></code></pre></div>
+<pre><code>##    Magnitud Latitud Longitud  Provincia Temperatura
+## 1       2.4  0.85 N  79.80 W Esmeraldas          28
+## 2       3.9  0.67 N  80.50 W Esmeraldas          30
+## 3       3.5  1.24 S  80.65 W Esmeraldas          29
+## 4       3.9  3.44 S  80.84 W     Manabí          29
+## 5       4.3   3.6 S  80.89 W     EL Oro          30
+## 6       4.1  0.36 N  80.22 W Esmeraldas          27
+## 7       4.4  0.75 S 81.17  W     Manabí          25
+## 8       3.5  0.72 S     81 W     Manabí          24
+## 9       3.2  0.22 N   80.06W     Manabí          26
+## 10      3.9  0.67 S   81.11W     Manabí          27
+## 11      3.8  3.32 S   81.06W     EL Oro          28
+## 12      2.4  1.38 S   78.45W Tungurahua          10</code></pre>
+</div>
 </div>
 
 
