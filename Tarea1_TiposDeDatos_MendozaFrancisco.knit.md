@@ -18,9 +18,7 @@ output:
       smooth_scroll: yes
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+
 
 ## TAREA 1: TIPOS DE DATOS
 
